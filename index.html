@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamyTeddy - Fluffy Cute Teddy Bears</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🧸 DreamyTeddy</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-btn" onclick="toggleCart()">
+                    🛒 Cart (<span id="cart-count">0</span>)
+                </button>
+                <button class="login-btn" onclick="openLogin()">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Welcome to DreamyTeddy</h2>
+            <p>Discover the fluffiest, cutest teddy bears that will bring joy to your life!</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Fluffy Collection</h2>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="login-modal">
+        <div class="login-content">
+            <button class="close-login" onclick="closeLogin()">×</button>
+            <h2>Welcome Back!</h2>
+            <form id="login-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your.email@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+                <p class="signup-link">Don't have an account? <a href="#" onclick="alert('Sign up feature coming soon!')">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+    <div class="login-overlay" id="login-overlay" onclick="closeLogin()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
