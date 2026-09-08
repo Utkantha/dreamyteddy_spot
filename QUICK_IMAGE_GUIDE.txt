@@ -1,0 +1,69 @@
+═══════════════════════════════════════════════════════════════
+   🧸 QUICK GUIDE: WHERE TO CHANGE TEDDY BEAR IMAGES
+═══════════════════════════════════════════════════════════════
+
+📍 LOCATION: Open the file "script.js" in your project folder
+
+🔍 WHAT TO LOOK FOR: Find the "products" array (starts around line 2)
+
+✏️ WHAT TO CHANGE: Each product has an "image" line like this:
+
+   image: "images/teddy1.jpg",
+
+═══════════════════════════════════════════════════════════════
+   METHOD 1: USE ONLINE IMAGE URLS (EASIEST - NO DOWNLOADS)
+═══════════════════════════════════════════════════════════════
+
+1. Go to: https://pixabay.com/images/search/teddy%20bear/
+2. Click on a teddy bear image you like
+3. Right-click the image → "Copy image address"
+4. In script.js, replace the image URL:
+
+   BEFORE:  image: "images/teddy1.jpg",
+   AFTER:   image: "https://cdn.pixabay.com/photo/.../teddy-bear.jpg",
+
+═══════════════════════════════════════════════════════════════
+   METHOD 2: USE LOCAL IMAGES (BETTER FOR PRODUCTION)
+═══════════════════════════════════════════════════════════════
+
+1. Download 12 teddy bear images
+2. Save them in the "images" folder
+3. Name them: teddy1.jpg, teddy2.jpg, teddy3.jpg, ... teddy12.jpg
+4. The code is already set up to use: "images/teddy1.jpg"
+
+═══════════════════════════════════════════════════════════════
+   EXAMPLE: HOW TO CHANGE ONE IMAGE
+═══════════════════════════════════════════════════════════════
+
+In script.js, find this section:
+
+   {
+       id: 1,
+       name: "Cloudy the Dreamer",
+       price: 29.99,
+       image: "images/teddy1.jpg",  ← CHANGE THIS LINE
+       rating: 4.9,
+       reviews: 234,
+       description: "Ultra-soft and huggable..."
+   }
+
+Replace "images/teddy1.jpg" with your image URL or path.
+
+═══════════════════════════════════════════════════════════════
+   FREE IMAGE WEBSITES
+═══════════════════════════════════════════════════════════════
+
+✅ Pixabay:    https://pixabay.com/images/search/teddy%20bear/
+✅ Unsplash:   https://unsplash.com/s/photos/teddy-bear
+✅ Pexels:     https://www.pexels.com/search/teddy%20bear/
+
+All images are FREE to use!
+
+═══════════════════════════════════════════════════════════════
+   NEED MORE HELP?
+═══════════════════════════════════════════════════════════════
+
+See the detailed guide: HOW_TO_ADD_IMAGES.md
+
+═══════════════════════════════════════════════════════════════
+

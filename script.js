@@ -1,10 +1,34 @@
-// Sample Teddy Bear Products with real teddy bear images
+/* ============================================
+   HOW TO ADD YOUR OWN TEDDY BEAR PHOTOS:
+   ============================================
+   
+   OPTION 1: Use Online Image URLs
+   - Find free teddy bear images on:
+     * Pixabay: https://pixabay.com/images/search/teddy%20bear/
+     * Unsplash: https://unsplash.com/s/photos/teddy-bear
+     * Pexels: https://www.pexels.com/search/teddy%20bear/
+   - Right-click the image → "Copy image address"
+   - Replace the "image" URL below with your copied URL
+   
+   OPTION 2: Use Local Images
+   - Create an "images" folder in your project
+   - Save your teddy bear photos (e.g., teddy1.jpg, teddy2.jpg)
+   - Change the image path to: "images/teddy1.jpg"
+   
+   EXAMPLE:
+   image: "images/teddy1.jpg"  // For local images
+   image: "https://example.com/teddy.jpg"  // For online URLs
+   ============================================ */
+
+// Sample Teddy Bear Products
+// ⚠️ IMPORTANT: Replace the image URLs below with your actual teddy bear photos!
 const products = [
     {
         id: 1,
         name: "Cloudy the Dreamer",
         price: 29.99,
-        image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&h=600&fit=crop&q=90",
+        // 👇 CHANGE THIS URL to your teddy bear image
+        image: "images/teddy1.jpg",  // Replace with your image URL or local path
         rating: 4.9,
         reviews: 234,
         description: "Ultra-soft and huggable, perfect for bedtime cuddles"
@@ -13,7 +37,8 @@ const products = [
         id: 2,
         name: "Starry Night Bear",
         price: 34.99,
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop&q=90",
+        // 👇 CHANGE THIS URL to your teddy bear image
+        image: "images/teddy2.jpg",  // Replace with your image URL or local path
         rating: 4.8,
         reviews: 189,
         description: "Sparkly and magical, brings dreams to life"
@@ -22,7 +47,8 @@ const products = [
         id: 3,
         name: "Honey Hug Bear",
         price: 27.99,
-        image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&h=600&fit=crop&q=90",
+        // 👇 CHANGE THIS URL to your teddy bear image
+        image: "images/teddy3.jpg",  // Replace with your image URL or local path
         rating: 5.0,
         reviews: 312,
         description: "Golden and warm, like a sweet honey hug"
@@ -31,7 +57,8 @@ const products = [
         id: 4,
         name: "Lavender Dreams",
         price: 32.99,
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop&q=90",
+        // 👇 CHANGE THIS URL to your teddy bear image
+        image: "images/teddy4.jpg",  // Replace with your image URL or local path
         rating: 4.7,
         reviews: 156,
         description: "Calming lavender scent, perfect for relaxation"
@@ -40,7 +67,8 @@ const products = [
         id: 5,
         name: "Rainbow Fluff",
         price: 36.99,
-        image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&h=600&fit=crop&q=90",
+        // 👇 CHANGE THIS URL to your teddy bear image
+        image: "images/teddy5.jpg",  // Replace with your image URL or local path
         rating: 4.9,
         reviews: 278,
         description: "Colorful and cheerful, spreads joy everywhere"
@@ -49,7 +77,8 @@ const products = [
         id: 6,
         name: "Cocoa Cuddles",
         price: 28.99,
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop&q=90",
+        // 👇 CHANGE THIS URL to your teddy bear image
+        image: "images/teddy6.jpg",  // Replace with your image URL or local path
         rating: 4.8,
         reviews: 201,
         description: "Chocolate brown and irresistibly soft"
@@ -58,7 +87,8 @@ const products = [
         id: 7,
         name: "Pink Paradise",
         price: 31.99,
-        image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&h=600&fit=crop&q=90",
+        // 👇 CHANGE THIS URL to your teddy bear image
+        image: "images/teddy7.jpg",  // Replace with your image URL or local path
         rating: 4.9,
         reviews: 267,
         description: "Pretty in pink, the perfect gift for anyone"
@@ -67,7 +97,8 @@ const products = [
         id: 8,
         name: "Midnight Blue",
         price: 33.99,
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop&q=90",
+        // 👇 CHANGE THIS URL to your teddy bear image
+        image: "images/teddy8.jpg",  // Replace with your image URL or local path
         rating: 4.6,
         reviews: 143,
         description: "Deep blue comfort for peaceful nights"
@@ -76,7 +107,8 @@ const products = [
         id: 9,
         name: "Sunshine Bear",
         price: 30.99,
-        image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&h=600&fit=crop&q=90",
+        // 👇 CHANGE THIS URL to your teddy bear image
+        image: "images/teddy9.jpg",  // Replace with your image URL or local path
         rating: 5.0,
         reviews: 298,
         description: "Bright and sunny, brings happiness daily"
@@ -85,7 +117,8 @@ const products = [
         id: 10,
         name: "Minty Fresh",
         price: 29.99,
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop&q=90",
+        // 👇 CHANGE THIS URL to your teddy bear image
+        image: "images/teddy10.jpg",  // Replace with your image URL or local path
         rating: 4.7,
         reviews: 175,
         description: "Cool mint green, fresh and delightful"
@@ -94,7 +127,8 @@ const products = [
         id: 11,
         name: "Peach Blossom",
         price: 35.99,
-        image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&h=600&fit=crop&q=90",
+        // 👇 CHANGE THIS URL to your teddy bear image
+        image: "images/teddy11.jpg",  // Replace with your image URL or local path
         rating: 4.8,
         reviews: 221,
         description: "Soft peach color, gentle and loving"
@@ -103,7 +137,8 @@ const products = [
         id: 12,
         name: "Golden Glow",
         price: 37.99,
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop&q=90",
+        // 👇 CHANGE THIS URL to your teddy bear image
+        image: "images/teddy12.jpg",  // Replace with your image URL or local path
         rating: 4.9,
         reviews: 289,
         description: "Luxurious golden bear, premium quality"
@@ -131,7 +166,7 @@ function renderProducts() {
         productCard.innerHTML = `
             <div class="product-image-wrapper">
                 <img src="${product.image}" alt="${product.name}" class="product-image" 
-                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&h=600&fit=crop&q=90';"
+                     onerror="this.onerror=null; this.style.background='linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.innerHTML='🧸<br>Image not found<br><small>Add your image in script.js</small>';"
                      loading="lazy">
                 <div class="product-badge">✨ New</div>
             </div>
